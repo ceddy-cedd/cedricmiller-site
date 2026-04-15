@@ -4,35 +4,86 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cedric Miller | DevSecOps & Security Engineer</title>
-  <meta name="description" content="Cedric Miller portfolio, resume, and DevSecOps projects." />
+  <meta
+    name="description"
+    content="Cedric Miller portfolio site featuring DevSecOps, cloud security, GitOps, CI/CD, and platform engineering projects."
+  />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <h1>Cedric Miller</h1>
-    <p>DevSecOps and Security Engineer</p>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/projects.html">Projects</a>
-      <a href="/resume.html">Resume</a>
-      <a href="/contact.html">Contact</a>
-    </nav>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="/">Cedric Miller</a>
+      <nav class="nav">
+        <a href="/">Home</a>
+        <a href="/projects.html">Projects</a>
+        <a href="/resume.html">Resume</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section>
-      <h2>About</h2>
-      <p>I build secure delivery pipelines, cloud-native platforms, and application security workflows with a focus on GitOps, CI/CD, and software supply chain integrity.</p>
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">DevSecOps • Security Engineering • Cloud & Platform Security</p>
+        <h1>I build secure delivery pipelines, cloud-native platforms, and security-focused engineering workflows.</h1>
+        <p class="lead">
+          I focus on GitOps, CI/CD hardening, vulnerability management, software supply chain security,
+          cloud-native deployment workflows, and security engineering operations.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="/projects.html">View Projects</a>
+          <a class="btn btn-secondary" href="/resume.html">View Resume</a>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <h2>Featured Project</h2>
-      <p>K3s Resume Platform: a personal DevSecOps homelab using GitHub Actions, GHCR, Flux CD, Trivy, Syft, Cosign, and Kyverno.</p>
+    <section class="section">
+      <div class="container grid-two">
+        <div class="card">
+          <h2>What I Do</h2>
+          <p>
+            I design and troubleshoot secure deployment workflows using Kubernetes, GitHub Actions,
+            Flux CD, container registries, artifact security controls, and policy enforcement.
+          </p>
+          <p>
+            My work centers on making delivery systems more trustworthy, auditable, and production-ready.
+          </p>
+        </div>
+
+        <div class="card">
+          <h2>Current Focus</h2>
+          <ul>
+            <li>DevSecOps and CI/CD security</li>
+            <li>GitOps platform operations</li>
+            <li>Cloud and container security</li>
+            <li>Software supply chain integrity</li>
+            <li>Production-minded security engineering</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <h2>Featured Project</h2>
+        <div class="card project-card">
+          <h3>K3s Resume Platform</h3>
+          <p>
+            Personal DevSecOps homelab project combining GitHub Actions, GHCR, Flux CD, Trivy, Syft,
+            Cosign, and Kyverno to build a secure GitOps-driven deployment workflow for a public-facing application.
+          </p>
+          <a class="text-link" href="/projects.html">Read the project details →</a>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>© Cedric Miller</p>
+  <footer class="site-footer">
+    <div class="container">
+      <p>© Cedric Miller</p>
+    </div>
   </footer>
 </body>
 </html>

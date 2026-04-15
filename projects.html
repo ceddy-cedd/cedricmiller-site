@@ -4,24 +4,50 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects | Cedric Miller</title>
+  <meta
+    name="description"
+    content="Projects by Cedric Miller focused on DevSecOps, Kubernetes, GitOps, CI/CD, and security engineering."
+  />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <h1>Projects</h1>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/projects.html">Projects</a>
-      <a href="/resume.html">Resume</a>
-      <a href="/contact.html">Contact</a>
-    </nav>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="/">Cedric Miller</a>
+      <nav class="nav">
+        <a href="/">Home</a>
+        <a href="/projects.html">Projects</a>
+        <a href="/resume.html">Resume</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section>
-      <h2>K3s Resume Platform</h2>
-      <p>GitOps-driven DevSecOps homelab project with CI/CD, SBOM generation, vulnerability scanning, signing, and policy enforcement.</p>
-    </section>
+  <main class="section">
+    <div class="container">
+      <h1>Projects</h1>
+
+      <div class="card">
+        <h2>K3s Resume Platform</h2>
+        <p class="meta">Personal DevSecOps / GitOps Homelab Project</p>
+        <p>
+          Built a GitOps-driven K3s platform to host a resume application and RSS aggregation service,
+          separating application source from cluster desired state across dedicated repositories.
+        </p>
+        <ul>
+          <li>Implemented GitHub Actions CI for build, publish, SBOM generation, vulnerability scanning, and artifact signing</li>
+          <li>Used GHCR, Flux CD, Kustomize, and image automation resources for registry monitoring and deployment reconciliation</li>
+          <li>Added Trivy, Syft, Cosign, and Kyverno to strengthen supply chain visibility and production controls</li>
+          <li>Enforced digest-pinned prod images and blocked mutable image patterns through cluster policy</li>
+        </ul>
+      </div>
+    </div>
   </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© Cedric Miller</p>
+    </div>
+  </footer>
 </body>
 </html>
