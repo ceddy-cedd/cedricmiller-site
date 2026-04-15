@@ -8,13 +8,16 @@
     name="description"
     content="Projects by Cedric Miller focused on DevSecOps, Kubernetes, GitOps, CI/CD, and security engineering."
   />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="canonical" href="https://cedricmiller.dev/projects.html" />
+  <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="site-header">
-    <div class="container">
+    <div class="container header-inner">
       <a class="brand" href="/">Cedric Miller</a>
-      <nav class="nav">
+      <nav class="nav" aria-label="Primary">
         <a href="/">Home</a>
         <a href="/projects.html">Projects</a>
         <a href="/resume.html">Resume</a>
@@ -23,30 +26,46 @@
     </div>
   </header>
 
-  <main class="section">
+  <main id="main" class="section">
     <div class="container">
       <h1>Projects</h1>
 
-      <div class="card">
+      <article class="card">
         <h2>K3s Resume Platform</h2>
         <p class="meta">Personal DevSecOps / GitOps Homelab Project</p>
         <p>
-          Built a GitOps-driven K3s platform to host a resume application and RSS aggregation service,
-          separating application source from cluster desired state across dedicated repositories.
+          This project demonstrates an end-to-end secure delivery workflow for a public-facing application,
+          separating application source from cluster desired state across dedicated repositories and using
+          modern platform tooling to control build, publish, promotion, and deployment behavior.
         </p>
-        <ul>
-          <li>Implemented GitHub Actions CI for build, publish, SBOM generation, vulnerability scanning, and artifact signing</li>
-          <li>Used GHCR, Flux CD, Kustomize, and image automation resources for registry monitoring and deployment reconciliation</li>
-          <li>Added Trivy, Syft, Cosign, and Kyverno to strengthen supply chain visibility and production controls</li>
-          <li>Enforced digest-pinned prod images and blocked mutable image patterns through cluster policy</li>
+
+        <h3>Key Components</h3>
+        <ul class="clean-list">
+          <li>K3s and Kubernetes for runtime orchestration</li>
+          <li>GitHub Actions for CI workflows</li>
+          <li>GHCR for container registry operations</li>
+          <li>Flux CD and Kustomize for GitOps reconciliation</li>
+          <li>Trivy for vulnerability scanning and critical-finding gates</li>
+          <li>Syft for SBOM generation</li>
+          <li>Cosign for artifact signing</li>
+          <li>Kyverno for prod image policy enforcement</li>
         </ul>
-      </div>
+
+        <h3>What It Demonstrates</h3>
+        <ul class="clean-list">
+          <li>Secure build and publish workflows</li>
+          <li>Digest-pinned promotion for prod</li>
+          <li>Admission control and deployment policy enforcement</li>
+          <li>Real troubleshooting across CI/CD, registry, GitOps, and Kubernetes layers</li>
+        </ul>
+      </article>
     </div>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
+    <div class="container footer-inner">
       <p>© Cedric Miller</p>
+      <p><a href="/contact.html">Contact</a></p>
     </div>
   </footer>
 </body>

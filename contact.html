@@ -4,14 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact | Cedric Miller</title>
-  <meta name="description" content="Contact and professional links for Cedric Miller." />
-  <link rel="stylesheet" href="styles.css" />
+  <meta
+    name="description"
+    content="Contact details and professional links for Cedric Miller."
+  />
+  <link rel="canonical" href="https://cedricmiller.dev/contact.html" />
+  <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="site-header">
-    <div class="container">
+    <div class="container header-inner">
       <a class="brand" href="/">Cedric Miller</a>
-      <nav class="nav">
+      <nav class="nav" aria-label="Primary">
         <a href="/">Home</a>
         <a href="/projects.html">Projects</a>
         <a href="/resume.html">Resume</a>
@@ -20,24 +26,30 @@
     </div>
   </header>
 
-  <main class="section">
+  <main id="main" class="section">
     <div class="container">
       <h1>Contact</h1>
 
-      <div class="card">
-        <p>Replace the placeholders below with your real links.</p>
-        <ul>
-          <li>Email: <a href="mailto:cedric7m@yahoo.com">cedric7m@yahoo.com</a></li>
-          <li>LinkedIn: <a href="#">Add your LinkedIn URL</a></li>
-          <li>GitHub: <a href="https://github.com/ceddy-cedd">github.com/ceddy-cedd</a></li>
-        </ul>
-      </div>
+      <article class="card">
+        <p>Email: <a href="mailto:cedric7m@yahoo.com">cedric7m@yahoo.com</a></p>
+        <p>GitHub: <a href="https://github.com/ceddy-cedd" rel="noopener noreferrer">github.com/ceddy-cedd</a></p>
+        <p>LinkedIn: <a href="#" rel="noopener noreferrer">Add your LinkedIn URL</a></p>
+      </article>
+
+      <article class="card">
+        <h2>Best Fit</h2>
+        <p>
+          I am most interested in DevSecOps, security engineering, cloud security, CI/CD security,
+          platform security, and production-facing roles where secure delivery and operational clarity matter.
+        </p>
+      </article>
     </div>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
+    <div class="container footer-inner">
       <p>© Cedric Miller</p>
+      <p><a href="/resume.html">Resume</a></p>
     </div>
   </footer>
 </body>
