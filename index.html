@@ -6,13 +6,26 @@
   <title>Cedric Miller | DevSecOps & Security Engineer</title>
   <meta
     name="description"
-    content="Cedric Miller portfolio featuring DevSecOps, security engineering, GitOps, CI/CD, Kubernetes, and cloud-native platform projects."
+    content="Cedric Miller portfolio featuring DevSecOps, security engineering, GitOps, Kubernetes, cloud-native platforms, and secure delivery systems."
   />
   <link rel="canonical" href="https://cedricmiller.dev/" />
   <link rel="stylesheet" href="/styles.css" />
+  <script defer src="/script.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="status-strip">
+    <div class="container status-strip-inner">
+      <span class="status-pill status-pill-available">Open to Security / DevSecOps Roles</span>
+      <span class="status-pill">San Diego, CA • Las Vegas, NV</span>
+      <span class="status-pill">Remote / Hybrid / Relocate</span>
+      <span class="status-pill">DevSecOps • Security Engineering</span>
+      <span class="status-pill">DoD / High-Assurance Systems</span>
+      <span class="status-pill">Visitor Time: <span id="visitor-time">--:--</span></span>
+      <span class="status-pill">Cedric Time: <span id="cedric-time">--:--</span></span>
+    </div>
+  </div>
 
   <header class="site-header">
     <div class="container header-inner">
@@ -27,40 +40,72 @@
   </header>
 
   <main id="main">
-    <section class="hero">
-      <div class="container">
-        <p class="eyebrow">DevSecOps • Security Engineering • Cloud & Platform Security</p>
-        <h1>Security-minded engineer building secure delivery pipelines, GitOps workflows, and cloud-native platforms.</h1>
-        <p class="lead">
-          I focus on CI/CD hardening, GitOps operations, vulnerability management, artifact integrity,
-          deployment security, and production-minded platform troubleshooting.
-        </p>
-        <div class="cta-row">
-          <a class="btn btn-primary" href="/projects.html">View Projects</a>
-          <a class="btn btn-secondary" href="/resume.html">View Resume</a>
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-card hero-main">
+          <p class="eyebrow">Security Engineering • DevSecOps • Cloud & Platform Security</p>
+          <h1>Security-minded engineer building secure delivery pipelines, GitOps workflows, and cloud-native platforms.</h1>
+          <p class="lead">
+            I build and secure practical engineering systems across CI/CD, Kubernetes, GitOps, cloud infrastructure,
+            and software supply chain controls, with a focus on trust, auditability, and production-minded troubleshooting.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn btn-primary" href="/projects.html">View Projects</a>
+            <a class="btn btn-secondary" href="/resume.html">View Resume</a>
+            <a class="btn btn-secondary" href="/assets/CedricMillerResume.pdf">Download Resume</a>
+          </div>
+
+          <div class="social-row" aria-label="Quick links">
+            <a class="social-link" href="https://www.linkedin.com/in/cedric-miller2020/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a class="social-link" href="https://github.com/ceddy-cedd" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a class="social-link" href="mailto:cedric7m@yahoo.com">Email</a>
+            <a class="social-link" href="/contact.html">Contact</a>
+          </div>
         </div>
+
+        <aside class="hero-card hero-side">
+          <h2>At a Glance</h2>
+          <dl class="info-list">
+            <div>
+              <dt>Focus</dt>
+              <dd>DevSecOps, Security Engineering, Cloud & Platform Security</dd>
+            </div>
+            <div>
+              <dt>Targets</dt>
+              <dd>DevSecOps Engineer, Security Engineer, Cloud Security, Platform Security</dd>
+            </div>
+            <div>
+              <dt>Operating Areas</dt>
+              <dd>CI/CD Hardening, GitOps, Artifact Trust, Kubernetes Delivery, Production Troubleshooting</dd>
+            </div>
+            <div>
+              <dt>Environment Type</dt>
+              <dd>Commercial, Federal, Regulated, High-Assurance Systems</dd>
+            </div>
+          </dl>
+        </aside>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container grid-two">
+    <section class="section dashboard-section">
+      <div class="container dashboard-grid">
         <article class="card">
-          <h2>What I Build</h2>
+          <h2>About</h2>
           <p>
-            I build delivery systems that emphasize trust, auditability, and operational clarity:
-            GitHub Actions pipelines, registry workflows, Kubernetes deployments, GitOps reconciliation,
-            software supply chain controls, and policy-based admission enforcement.
+            DevSecOps and security-focused engineer with hands-on experience across secure CI/CD,
+            Kubernetes delivery, GitOps operations, cloud-native troubleshooting, artifact trust,
+            and regulated or high-assurance environments.
           </p>
         </article>
 
         <article class="card">
           <h2>Current Focus</h2>
           <ul class="clean-list">
-            <li>DevSecOps and CI/CD security</li>
-            <li>GitOps and Kubernetes operations</li>
-            <li>Cloud and container security</li>
-            <li>Artifact integrity and vulnerability management</li>
-            <li>Production troubleshooting and platform reliability</li>
+            <li>Building a K3s-based GitOps homelab with secure image promotion and policy enforcement</li>
+            <li>Expanding into cloud and infrastructure automation with AWS, Terraform, and Ansible</li>
+            <li>Developing additional CNCF and security-focused projects to deepen platform and security engineering range</li>
+            <li>Improving public demonstrations of secure delivery, GitOps, and production-minded engineering work</li>
           </ul>
         </article>
       </div>
@@ -68,32 +113,151 @@
 
     <section class="section section-alt">
       <div class="container">
-        <h2>Featured Project</h2>
-        <article class="card project-card">
-          <h3>K3s Resume Platform</h3>
-          <p class="meta">Personal DevSecOps / GitOps Homelab Project</p>
+        <div class="section-heading">
+          <p class="eyebrow">Tooling & Stack</p>
+          <h2>Core Technical Areas</h2>
+        </div>
+
+        <div class="stack-grid">
+          <article class="card">
+            <h3>Platform</h3>
+            <div class="tag-group">
+              <span class="tag">Kubernetes</span>
+              <span class="tag">K3s</span>
+              <span class="tag">Docker</span>
+              <span class="tag">Helm</span>
+              <span class="tag">Traefik</span>
+              <span class="tag">Linux</span>
+              <span class="tag">OpenShift</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Delivery</h3>
+            <div class="tag-group">
+              <span class="tag">GitHub Actions</span>
+              <span class="tag">Flux CD</span>
+              <span class="tag">Kustomize</span>
+              <span class="tag">GHCR</span>
+              <span class="tag">Jenkins</span>
+              <span class="tag">Tekton</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Security</h3>
+            <div class="tag-group">
+              <span class="tag">Trivy</span>
+              <span class="tag">Syft</span>
+              <span class="tag">Cosign</span>
+              <span class="tag">Kyverno</span>
+              <span class="tag">SonarQube</span>
+              <span class="tag">Nexus IQ</span>
+              <span class="tag">RMF</span>
+              <span class="tag">NIST 800-53</span>
+              <span class="tag">DISA STIG</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Cloud / Infra</h3>
+            <div class="tag-group">
+              <span class="tag">AWS</span>
+              <span class="tag">CloudWatch</span>
+              <span class="tag">CloudTrail</span>
+              <span class="tag">GuardDuty</span>
+              <span class="tag">Terraform</span>
+              <span class="tag">Ansible</span>
+              <span class="tag">IAM</span>
+              <span class="tag">KMS</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container featured-grid">
+        <article class="card featured-project">
+          <p class="eyebrow">Featured Project</p>
+          <h2>K3s Resume Platform</h2>
+          <p class="meta-line">End-to-end DevSecOps / GitOps homelab with live application delivery</p>
           <p>
-            Built a GitOps-driven K3s platform to host a resume application and RSS aggregation service,
-            with secure build, publish, scan, signing, promotion, and policy enforcement workflows.
+            Built a public-facing FastAPI application and delivered it through a K3s-based GitOps workflow with
+            image publishing, SBOM generation, vulnerability scanning, artifact signing, automated dev updates,
+            and controlled production promotion by digest.
           </p>
-          <ul class="clean-list">
-            <li>GitHub Actions CI with GHCR publishing</li>
-            <li>SBOM generation with Syft</li>
-            <li>Vulnerability gating with Trivy</li>
-            <li>Artifact signing with Cosign</li>
-            <li>GitOps reconciliation with Flux CD</li>
-            <li>Prod image policy enforcement with Kyverno</li>
+
+          <ul class="clean-list proof-list">
+            <li>FastAPI application serving resume and RSS aggregation pages</li>
+            <li>Dockerized runtime with health endpoints</li>
+            <li>GitHub Actions build, publish, scan, and signing workflow</li>
+            <li>GHCR image distribution and Flux-based GitOps automation</li>
+            <li>Prod promotion by immutable digest with policy enforcement</li>
           </ul>
-          <a class="text-link" href="/projects.html">Read project details →</a>
+
+          <div class="portal-links">
+            <a class="btn btn-secondary" href="/projects.html">Project Writeup</a>
+            <a class="btn btn-secondary" href="https://github.com/ceddy-cedd/k3s-resume-platform" target="_blank" rel="noopener noreferrer">App Repo</a>
+            <a class="btn btn-secondary" href="https://github.com/ceddy-cedd/k3s-resume-platform-gitops" target="_blank" rel="noopener noreferrer">GitOps Repo</a>
+          </div>
         </article>
+
+        <aside class="card proof-card">
+          <p class="eyebrow">Operational Proof</p>
+          <h2>System State</h2>
+
+          <div class="metric-grid">
+            <div class="metric-card">
+              <span class="metric-label">Public Portfolio</span>
+              <strong>Active</strong>
+            </div>
+            <div class="metric-card">
+              <span class="metric-label">CI/CD Pipeline</span>
+              <strong>Active</strong>
+            </div>
+            <div class="metric-card">
+              <span class="metric-label">SBOM</span>
+              <strong>Enabled</strong>
+            </div>
+            <div class="metric-card">
+              <span class="metric-label">Image Signing</span>
+              <strong>Enabled</strong>
+            </div>
+            <div class="metric-card">
+              <span class="metric-label">Dev Auto-Update</span>
+              <strong>Active</strong>
+            </div>
+            <div class="metric-card">
+              <span class="metric-label">Prod Promotion</span>
+              <strong>Digest-Pinned</strong>
+            </div>
+            <div class="metric-card">
+              <span class="metric-label">Cluster Policy</span>
+              <strong>Enforced</strong>
+            </div>
+            <div class="metric-card">
+              <span class="metric-label">Live Demo</span>
+              <strong>Ready</strong>
+            </div>
+          </div>
+        </aside>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© Cedric Miller</p>
-      <p><a href="/contact.html">Contact</a></p>
+      <div>
+        <strong>Cedric Miller</strong>
+        <p>Security Engineering • DevSecOps • Cloud & Platform Security</p>
+      </div>
+      <div class="footer-links">
+        <a href="/resume.html">Resume</a>
+        <a href="/projects.html">Projects</a>
+        <a href="/contact.html">Contact</a>
+        <a href="https://github.com/ceddy-cedd" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
     </div>
   </footer>
 </body>
