@@ -411,14 +411,16 @@ h3 {
 .tag {
   display: inline-flex;
   align-items: center;
+  gap: 0;
   padding: 8px 12px;
   border-radius: 999px;
   background: var(--accent-soft);
   border: 1px solid rgba(101, 200, 255, 0.16);
   color: #d7f1ff;
   font-size: 0.86rem;
+  line-height: 1;
+  white-space: nowrap;
 }
-
 
 .tag-with-icon {
   gap: 8px;
@@ -427,11 +429,15 @@ h3 {
 }
 
 .tag-logo {
-  width: 0.95rem;
-  height: 0.95rem;
-  display: inline-block;
-  flex: 0 0 auto;
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  min-height: 18px;
+  max-width: 18px;
+  max-height: 18px;
+  display: block;
   object-fit: contain;
+  flex: 0 0 18px;
 }
 
 .proof-list {
