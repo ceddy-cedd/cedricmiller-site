@@ -94,6 +94,19 @@ a:hover {
   color: #cffff0;
 }
 
+.status-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #36d399;
+  box-shadow: 0 0 0 4px rgba(54, 211, 153, 0.14), 0 0 12px rgba(54, 211, 153, 0.55);
+  flex: 0 0 auto;
+}
+
+.status-pill-available {
+  gap: 8px;
+}
+
 .site-header {
   position: sticky;
   top: 0;
@@ -116,6 +129,23 @@ a:hover {
   font-weight: 700;
   font-size: 1.08rem;
   letter-spacing: 0.02em;
+}
+
+.brand-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.header-meta .status-pill {
+  font-size: 0.78rem;
+  padding: 6px 10px;
 }
 
 .nav {
@@ -198,9 +228,9 @@ a:hover {
 
 h1 {
   margin: 0 0 18px;
-  max-width: 880px;
-  font-size: clamp(2.3rem, 4vw, 4.2rem);
-  line-height: 1.05;
+  max-width: 820px;
+  font-size: clamp(1.95rem, 3.2vw, 3.55rem);
+  line-height: 1.08;
 }
 
 h2 {
@@ -246,6 +276,32 @@ h3 {
 
 .social-row {
   margin-top: 18px;
+}
+
+.social-icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  border: 1px solid rgba(101, 200, 255, 0.22);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text);
+  transition: transform 0.16s ease, border-color 0.16s ease, background 0.16s ease;
+}
+
+.social-icon-link:hover {
+  transform: translateY(-1px);
+  border-color: rgba(101, 200, 255, 0.5);
+  background: rgba(101, 200, 255, 0.08);
+  color: var(--accent-strong);
+}
+
+.social-svg {
+  width: 22px;
+  height: 22px;
+  display: block;
 }
 
 .portal-links {
@@ -301,6 +357,18 @@ h3 {
   font-size: 0.92rem;
 }
 
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1;
+  opacity: 0.92;
+}
+
 .social-link:hover {
   border-color: rgba(101, 200, 255, 0.45);
 }
@@ -351,6 +419,23 @@ h3 {
   font-size: 0.86rem;
 }
 
+iconify-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.125em;
+}
+
+.tag-with-icon {
+  gap: 8px;
+  padding-left: 10px;
+  padding-right: 12px;
+}
+
+.tag-with-icon iconify-icon {
+  font-size: 0.95rem;
+}
+
 .proof-list {
   margin-top: 18px;
 }
@@ -362,17 +447,168 @@ h3 {
 }
 
 .metric-card {
-  border: 1px solid var(--border);
+  border: 1px solid rgba(101, 200, 255, 0.16);
   border-radius: 14px;
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.025);
   padding: 14px;
 }
 
 .metric-card strong {
-  display: block;
-  margin-top: 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 6px;
   color: var(--text);
   font-size: 1rem;
+}
+
+.metric-card strong::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #36d399;
+  box-shadow: 0 0 0 4px rgba(54, 211, 153, 0.12), 0 0 12px rgba(54, 211, 153, 0.45);
+  flex: 0 0 auto;
+  animation: status-pulse 2.4s ease-in-out infinite;
+}
+
+.metric-card-button {
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  font: inherit;
+}
+
+.metric-card-button {
+  position: relative;
+}
+
+.metric-card-button::after {
+  content: "↗";
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  border: 1px solid rgba(101, 200, 255, 0.14);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1;
+  transition: border-color 0.16s ease, color 0.16s ease, background 0.16s ease;
+}
+
+.metric-card-button:hover::after {
+  border-color: rgba(101, 200, 255, 0.34);
+  color: var(--accent-strong);
+  background: rgba(101, 200, 255, 0.08);
+}
+
+.metric-card-button:hover {
+  border-color: rgba(101, 200, 255, 0.32);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.proof-modal[hidden] {
+  display: none;
+}
+
+.proof-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+}
+
+.proof-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(2, 8, 18, 0.82);
+}
+
+.proof-modal-dialog {
+  position: relative;
+  width: min(560px, calc(100% - 32px));
+  margin: 8vh auto 0;
+  background: linear-gradient(180deg, var(--panel) 0%, var(--panel-alt) 100%);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  padding: 28px;
+}
+
+.proof-modal-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.proof-modal-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text);
+  font-weight: 700;
+  margin: 10px 0 12px;
+}
+
+.proof-modal-status::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #36d399;
+  box-shadow: 0 0 0 4px rgba(54, 211, 153, 0.12), 0 0 12px rgba(54, 211, 153, 0.45);
+  flex: 0 0 auto;
+}
+
+.proof-modal-summary {
+  color: var(--muted);
+  margin: 0 0 18px;
+}
+
+.proof-modal-meta {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.025);
+  padding: 14px;
+  margin-bottom: 20px;
+}
+
+.proof-modal-meta-label {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+
+.proof-modal-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+@keyframes status-pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.08);
+    opacity: 0.82;
+  }
 }
 
 .metric-label {
@@ -407,6 +643,10 @@ h3 {
   align-items: flex-start;
 }
 
+.footer-social {
+  gap: 10px;
+}
+
 @media (max-width: 1024px) {
   .hero-grid,
   .dashboard-grid,
@@ -430,11 +670,50 @@ h3 {
     gap: 8px;
   }
 
+  .section {
+    padding: 40px 0;
+  }
+
+  .hero-card,
+  .card,
+  .proof-modal-dialog {
+    padding: 22px;
+  }
+
+  .header-meta {
+    gap: 8px;
+  }
+
+  .header-meta .status-pill {
+    font-size: 0.74rem;
+    padding: 6px 9px;
+  }
+
+  .cta-row,
+  .proof-modal-actions {
+    flex-direction: column;
+  }
+
+  .cta-row .btn,
+  .proof-modal-actions .btn {
+    width: 100%;
+  }
+
+  .social-row {
+    gap: 10px;
+  }
+
   .metric-grid {
     grid-template-columns: 1fr;
   }
 
+  .proof-modal-dialog {
+    width: min(560px, calc(100% - 20px));
+    margin: 5vh auto 0;
+  }
+
   h1 {
-    font-size: 2.2rem;
+    font-size: 2.05rem;
+    line-height: 1.12;
   }
 }
