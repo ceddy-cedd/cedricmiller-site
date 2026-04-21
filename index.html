@@ -1,35 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+  <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cedric Miller | DevSecOps & Security Engineer</title>
-  <meta
-    name="description"
-    content="Cedric Miller portfolio featuring DevSecOps, security engineering, GitOps, Kubernetes, cloud-native platforms, and secure delivery systems."
-  />
+  <meta name="description"
+    content="Cedric Miller portfolio featuring DevSecOps, security engineering, GitOps, Kubernetes, cloud-native platforms, and secure delivery systems." />
   <link rel="canonical" href="https://cedricmiller.dev/" />
   <link rel="stylesheet" href="/styles.css" />
   <script defer src="/script.js"></script>
 </head>
+
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
   <div class="status-strip">
     <div class="container status-strip-inner">
-      <span class="status-pill status-pill-available">Open to Security / DevSecOps Roles</span>
-      <span class="status-pill">San Diego, CA • Las Vegas, NV</span>
-      <span class="status-pill">Remote / Hybrid / Relocate</span>
-      <span class="status-pill">DevSecOps • Security Engineering</span>
-      <span class="status-pill">DoD / High-Assurance Systems</span>
-      <span class="status-pill">Visitor Time: <span id="visitor-time">--:--</span></span>
-      <span class="status-pill">Cedric Time: <span id="cedric-time">--:--</span></span>
+      <span class="status-pill status-pill-available">
+        <span class="status-dot" aria-hidden="true"></span>
+        Open to Security / DevSecOps Roles
+      </span>
+      <span class="status-pill">Remote / Hybrid</span>
     </div>
   </div>
 
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="/">Cedric Miller</a>
+      <div class="brand-group">
+        <a class="brand" href="/">Cedric Miller</a>
+        <div class="header-meta">
+          <span class="status-pill">Your Time: <span id="visitor-time">--:--</span></span>
+          <span class="status-pill">Cedric Time: <span id="cedric-time">--:--</span></span>
+        </div>
+      </div>
       <nav class="nav" aria-label="Primary">
         <a href="/">Home</a>
         <a href="/projects.html">Projects</a>
@@ -44,10 +49,11 @@
       <div class="container hero-grid">
         <div class="hero-card hero-main">
           <p class="eyebrow">Security Engineering • DevSecOps • Cloud & Platform Security</p>
-          <h1>Security-minded engineer building secure delivery pipelines, GitOps workflows, and cloud-native platforms.</h1>
+          <h1>Security-minded engineer building secure delivery pipelines, GitOps workflows, and cloud-native platforms.
+          </h1>
           <p class="lead">
-            I build and secure practical engineering systems across CI/CD, Kubernetes, GitOps, cloud infrastructure,
-            and software supply chain controls, with a focus on trust, auditability, and production-minded troubleshooting.
+            I design and secure delivery workflows that make applications easier to ship, verify, and operate across
+            Kubernetes, CI/CD, and cloud-native environments.
           </p>
 
           <div class="cta-row">
@@ -57,10 +63,35 @@
           </div>
 
           <div class="social-row" aria-label="Quick links">
-            <a class="social-link" href="https://www.linkedin.com/in/cedric-miller2020/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a class="social-link" href="https://github.com/ceddy-cedd" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a class="social-link" href="mailto:cedric7m@yahoo.com">Email</a>
-            <a class="social-link" href="/contact.html">Contact</a>
+            <a class="social-icon-link" href="https://www.linkedin.com/in/cedric-miller2020/" target="_blank"
+              rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg class="social-svg" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor"
+                  d="M6.94 8.5H3.56V20h3.38V8.5ZM5.25 3A1.97 1.97 0 1 0 5.3 6.94 1.97 1.97 0 0 0 5.25 3ZM20.44 12.7c0-3.46-1.85-5.07-4.32-5.07-1.99 0-2.88 1.09-3.38 1.86V8.5H9.38V20h3.36v-6.2c0-1.63.31-3.2 2.33-3.2 1.99 0 2.02 1.86 2.02 3.3V20H20.44v-7.3Z" />
+              </svg>
+            </a>
+
+            <a class="social-icon-link" href="https://github.com/ceddy-cedd" target="_blank" rel="noopener noreferrer"
+              aria-label="GitHub">
+              <svg class="social-svg" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor"
+                  d="M12 .5A12 12 0 0 0 8.2 23.9c.6.1.82-.26.82-.58v-2.03c-3.34.73-4.04-1.42-4.04-1.42-.55-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.22 1.84 1.22 1.08 1.83 2.82 1.3 3.5.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.32-5.47-5.9 0-1.3.47-2.37 1.23-3.2-.12-.3-.53-1.52.12-3.17 0 0 1-.32 3.3 1.22a11.5 11.5 0 0 1 6 0c2.28-1.54 3.28-1.22 3.28-1.22.66 1.65.25 2.87.13 3.17.77.83 1.23 1.9 1.23 3.2 0 4.6-2.81 5.59-5.5 5.88.43.37.82 1.1.82 2.23v3.3c0 .32.21.7.83.58A12 12 0 0 0 12 .5Z" />
+              </svg>
+            </a>
+
+            <a class="social-icon-link" href="mailto:cedric7m@yahoo.com" aria-label="Email">
+              <svg class="social-svg" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor"
+                  d="M3 5.5A2.5 2.5 0 0 1 5.5 3h13A2.5 2.5 0 0 1 21 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 18.5v-13Zm2.1-.5L12 10.1 18.9 5H5.1Zm13.9 1.24-6.4 4.72a1 1 0 0 1-1.2 0L5 6.24V18.5a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5V6.24Z" />
+              </svg>
+            </a>
+
+            <a class="social-icon-link" href="/contact.html" aria-label="Contact">
+              <svg class="social-svg" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor"
+                  d="M6.62 10.79a15.46 15.46 0 0 0 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20a1 1 0 0 1-1 1C10.3 21 3 13.7 3 4a1 1 0 0 1 1-1h3.5c.55 0 1 .45 1 1 0 1.24.2 2.45.57 3.57.12.35.03.75-.24 1.02l-2.2 2.2Z" />
+              </svg>
+            </a>
           </div>
         </div>
 
@@ -93,9 +124,8 @@
         <article class="card">
           <h2>About</h2>
           <p>
-            DevSecOps and security-focused engineer with hands-on experience across secure CI/CD,
-            Kubernetes delivery, GitOps operations, cloud-native troubleshooting, artifact trust,
-            and regulated or high-assurance environments.
+            I focus on practical engineering work that improves trust, auditability, and day-to-day operability,
+            especially in regulated or high-assurance environments.
           </p>
         </article>
 
@@ -104,7 +134,9 @@
           <ul class="clean-list">
             <li>Building a K3s-based GitOps homelab with secure image promotion and policy enforcement</li>
             <li>Expanding into cloud and infrastructure automation with AWS, Terraform, and Ansible</li>
-            <li>Developing additional CNCF and security-focused projects to deepen platform and security engineering range</li>
+            <li>Exploring AI agentic development and operator-style workflows</li>
+            <li>Building additional security, cloud, and CNCF projects to keep my skills sharp while I search for the
+              right role</li>
             <li>Improving public demonstrations of secure delivery, GitOps, and production-minded engineering work</li>
           </ul>
         </article>
@@ -122,36 +154,40 @@
           <article class="card">
             <h3>Platform</h3>
             <div class="tag-group">
-              <span class="tag">Kubernetes</span>
+              <span class="tag tag-with-icon"><iconify-icon icon="devicon:kubernetes"></iconify-icon>Kubernetes</span>
+              <span class="tag tag-with-icon"><iconify-icon icon="devicon:docker"></iconify-icon>Docker</span>
+              <span class="tag tag-with-icon"><iconify-icon icon="devicon:linux"></iconify-icon>Linux</span>
+              <span class="tag tag-with-icon"><iconify-icon
+                  icon="simple-icons:redhatopenshift"></iconify-icon>OpenShift</span>
               <span class="tag">K3s</span>
-              <span class="tag">Docker</span>
               <span class="tag">Helm</span>
               <span class="tag">Traefik</span>
-              <span class="tag">Linux</span>
-              <span class="tag">OpenShift</span>
             </div>
           </article>
 
           <article class="card">
             <h3>Delivery</h3>
             <div class="tag-group">
-              <span class="tag">GitHub Actions</span>
-              <span class="tag">Flux CD</span>
-              <span class="tag">Kustomize</span>
+              <span class="tag tag-with-icon"><iconify-icon icon="devicon:githubactions"></iconify-icon>GitHub
+                Actions</span>
+              <span class="tag tag-with-icon"><iconify-icon icon="logos:flux"></iconify-icon>Flux CD</span>
+              <span class="tag tag-with-icon"><iconify-icon
+                  icon="simple-icons:kustomize"></iconify-icon>Kustomize</span>
               <span class="tag">GHCR</span>
-              <span class="tag">Jenkins</span>
-              <span class="tag">Tekton</span>
+              <span class="tag tag-with-icon"><iconify-icon icon="logos:jenkins"></iconify-icon>Jenkins</span>
+              <span class="tag tag-with-icon"><iconify-icon icon="simple-icons:tekton"></iconify-icon>Tekton</span>
             </div>
           </article>
 
           <article class="card">
             <h3>Security</h3>
             <div class="tag-group">
-              <span class="tag">Trivy</span>
+              <span class="tag tag-with-icon"><iconify-icon icon="simple-icons:trivy"></iconify-icon>Trivy</span>
               <span class="tag">Syft</span>
               <span class="tag">Cosign</span>
               <span class="tag">Kyverno</span>
-              <span class="tag">SonarQube</span>
+              <span class="tag tag-with-icon"><iconify-icon
+                  icon="simple-icons:sonarqube"></iconify-icon>SonarQube</span>
               <span class="tag">Nexus IQ</span>
               <span class="tag">RMF</span>
               <span class="tag">NIST 800-53</span>
@@ -162,11 +198,12 @@
           <article class="card">
             <h3>Cloud / Infra</h3>
             <div class="tag-group">
-              <span class="tag">AWS</span>
+              <span class="tag tag-with-icon"><iconify-icon
+                  icon="simple-icons:amazonwebservices"></iconify-icon>AWS</span>
+              <span class="tag tag-with-icon"><iconify-icon icon="devicon:terraform"></iconify-icon>Terraform</span>
               <span class="tag">CloudWatch</span>
               <span class="tag">CloudTrail</span>
               <span class="tag">GuardDuty</span>
-              <span class="tag">Terraform</span>
               <span class="tag">Ansible</span>
               <span class="tag">IAM</span>
               <span class="tag">KMS</span>
@@ -198,48 +235,46 @@
 
           <div class="portal-links">
             <a class="btn btn-secondary" href="/projects.html">Project Writeup</a>
-            <a class="btn btn-secondary" href="https://github.com/ceddy-cedd/k3s-resume-platform" target="_blank" rel="noopener noreferrer">App Repo</a>
-            <a class="btn btn-secondary" href="https://github.com/ceddy-cedd/k3s-resume-platform-gitops" target="_blank" rel="noopener noreferrer">GitOps Repo</a>
+            <a class="btn btn-secondary" href="https://github.com/ceddy-cedd/k3s-resume-platform" target="_blank"
+              rel="noopener noreferrer">App Repo</a>
+            <a class="btn btn-secondary" href="https://github.com/ceddy-cedd/k3s-resume-platform-gitops" target="_blank"
+              rel="noopener noreferrer">GitOps Repo</a>
           </div>
         </article>
 
         <aside class="card proof-card">
-          <p class="eyebrow">Operational Proof</p>
-          <h2>System State</h2>
+            <p class="eyebrow">Inspectable Evidence</p>
+            <h2>Operational Proof</h2>
 
           <div class="metric-grid">
-            <div class="metric-card">
-              <span class="metric-label">Public Portfolio</span>
-              <strong>Active</strong>
-            </div>
-            <div class="metric-card">
+            <button class="metric-card metric-card-button" type="button" data-proof-key="pipeline">
               <span class="metric-label">CI/CD Pipeline</span>
               <strong>Active</strong>
-            </div>
-            <div class="metric-card">
+            </button>
+            <button class="metric-card metric-card-button" type="button" data-proof-key="sbom">
               <span class="metric-label">SBOM</span>
               <strong>Enabled</strong>
-            </div>
-            <div class="metric-card">
+            </button>
+            <button class="metric-card metric-card-button" type="button" data-proof-key="image_signing">
               <span class="metric-label">Image Signing</span>
               <strong>Enabled</strong>
-            </div>
-            <div class="metric-card">
+            </button>
+            <button class="metric-card metric-card-button" type="button" data-proof-key="dev_auto_update">
               <span class="metric-label">Dev Auto-Update</span>
               <strong>Active</strong>
-            </div>
-            <div class="metric-card">
+            </button>
+            <button class="metric-card metric-card-button" type="button" data-proof-key="prod_promotion">
               <span class="metric-label">Prod Promotion</span>
               <strong>Digest-Pinned</strong>
-            </div>
-            <div class="metric-card">
-              <span class="metric-label">Cluster Policy</span>
+            </button>
+            <button class="metric-card metric-card-button" type="button" data-proof-key="policy_enforcement">
+              <span class="metric-label">Policy Enforcement</span>
               <strong>Enforced</strong>
-            </div>
-            <div class="metric-card">
+            </button>
+            <button class="metric-card metric-card-button" type="button" data-proof-key="live_demo">
               <span class="metric-label">Live Demo</span>
               <strong>Ready</strong>
-            </div>
+            </button>
           </div>
         </aside>
       </div>
@@ -252,13 +287,60 @@
         <strong>Cedric Miller</strong>
         <p>Security Engineering • DevSecOps • Cloud & Platform Security</p>
       </div>
-      <div class="footer-links">
-        <a href="/resume.html">Resume</a>
-        <a href="/projects.html">Projects</a>
-        <a href="/contact.html">Contact</a>
-        <a href="https://github.com/ceddy-cedd" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <div class="footer-links footer-social" aria-label="Footer quick links">
+        <a class="social-icon-link" href="https://www.linkedin.com/in/cedric-miller2020/" target="_blank"
+          rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg class="social-svg" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="currentColor"
+              d="M6.94 8.5H3.56V20h3.38V8.5ZM5.25 3A1.97 1.97 0 1 0 5.3 6.94 1.97 1.97 0 0 0 5.25 3ZM20.44 12.7c0-3.46-1.85-5.07-4.32-5.07-1.99 0-2.88 1.09-3.38 1.86V8.5H9.38V20h3.36v-6.2c0-1.63.31-3.2 2.33-3.2 1.99 0 2.02 1.86 2.02 3.3V20H20.44v-7.3Z" />
+          </svg>
+        </a>
+        <a class="social-icon-link" href="https://github.com/ceddy-cedd" target="_blank" rel="noopener noreferrer"
+          aria-label="GitHub">
+          <svg class="social-svg" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="currentColor"
+              d="M12 .5A12 12 0 0 0 8.2 23.9c.6.1.82-.26.82-.58v-2.03c-3.34.73-4.04-1.42-4.04-1.42-.55-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.22 1.84 1.22 1.08 1.83 2.82 1.3 3.5.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.32-5.47-5.9 0-1.3.47-2.37 1.23-3.2-.12-.3-.53-1.52.12-3.17 0 0 1-.32 3.3 1.22a11.5 11.5 0 0 1 6 0c2.28-1.54 3.28-1.22 3.28-1.22.66 1.65.25 2.87.13 3.17.77.83 1.23 1.9 1.23 3.2 0 4.6-2.81 5.59-5.5 5.88.43.37.82 1.1.82 2.23v3.3c0 .32.21.7.83.58A12 12 0 0 0 12 .5Z" />
+          </svg>
+        </a>
+        <a class="social-icon-link" href="mailto:cedric7m@yahoo.com" aria-label="Email">
+          <svg class="social-svg" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="currentColor"
+              d="M3 5.5A2.5 2.5 0 0 1 5.5 3h13A2.5 2.5 0 0 1 21 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 18.5v-13Zm2.1-.5L12 10.1 18.9 5H5.1Zm13.9 1.24-6.4 4.72a1 1 0 0 1-1.2 0L5 6.24V18.5a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5V6.24Z" />
+          </svg>
+        </a>
+        <a class="social-icon-link" href="/contact.html" aria-label="Contact">
+          <svg class="social-svg" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="currentColor"
+              d="M6.62 10.79a15.46 15.46 0 0 0 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20a1 1 0 0 1-1 1C10.3 21 3 13.7 3 4a1 1 0 0 1 1-1h3.5c.55 0 1 .45 1 1 0 1.24.2 2.45.57 3.57.12.35.03.75-.24 1.02l-2.2 2.2Z" />
+          </svg>
+        </a>
       </div>
     </div>
   </footer>
+  <div class="proof-modal" id="proof-modal" hidden>
+    <div class="proof-modal-backdrop" data-proof-close></div>
+    <div class="proof-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="proof-modal-title">
+      <button class="proof-modal-close" type="button" aria-label="Close proof details" data-proof-close>×</button>
+
+      <p class="eyebrow">Operational Proof</p>
+      <h2 id="proof-modal-title">Proof Details</h2>
+      <p class="proof-modal-status" id="proof-modal-status">Status</p>
+      <p class="proof-modal-summary" id="proof-modal-summary">Summary</p>
+
+      <div class="proof-modal-meta">
+        <div>
+          <span class="proof-modal-meta-label">Value</span>
+          <strong id="proof-modal-value">—</strong>
+        </div>
+      </div>
+
+      <div class="proof-modal-actions">
+        <a class="btn btn-secondary" id="proof-modal-link" href="#" target="_blank" rel="noopener noreferrer">Open
+          Source</a>
+        <button class="btn btn-secondary" type="button" data-proof-close>Close</button>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>
