@@ -11,7 +11,7 @@
     "label": "Prod Promotion",
     "status": "Digest-Pinned",
     "summary": "Production deployment is promoted by immutable image digest.",
-    "value": "sha256:1bf8a2839550...",
+    "value": "sha256:3f7f3c0164a8...",
     "url": "",
     "source_url": "https://github.com/ceddy-cedd/k3s-resume-platform-gitops"
   },
@@ -20,32 +20,32 @@
     "status": "Available",
     "summary": "An SPDX SBOM is generated during the image build workflow.",
     "value": "rss-api-sbom.spdx.json",
-    "url": "https://github.com/ceddy-cedd/k3s-resume-platform/actions/runs/24707310248",
-    "source_url": "https://github.com/ceddy-cedd/k3s-resume-platform/actions/runs/24707310248"
+    "url": "https://github.com/ceddy-cedd/k3s-resume-platform/actions/runs/24748039394",
+    "source_url": "https://github.com/ceddy-cedd/k3s-resume-platform/actions/runs/24748039394"
   },
   "image_signing": {
     "label": "Image Signing",
     "status": "Signed",
     "summary": "The latest image was signed with Cosign in the delivery workflow.",
     "value": "Cosign keyless signing",
-    "url": "https://github.com/ceddy-cedd/k3s-resume-platform/actions/runs/24707310248",
-    "source_url": "https://github.com/ceddy-cedd/k3s-resume-platform/actions/runs/24707310248"
+    "url": "https://github.com/ceddy-cedd/k3s-resume-platform/actions/runs/24748039394",
+    "source_url": "https://github.com/ceddy-cedd/k3s-resume-platform/actions/runs/24748039394"
   },
   "pipeline": {
     "label": "CI/CD Pipeline",
     "status": "Passing",
     "summary": "Latest build, scan, publish, and signing workflow completed successfully.",
-    "value": "Run #17 \u00b7 0566c00",
-    "url": "https://github.com/ceddy-cedd/k3s-resume-platform/actions/runs/24707310248",
-    "source_url": "https://github.com/ceddy-cedd/k3s-resume-platform/actions/runs/24707310248"
+    "value": "Run #18 \u00b7 ef8518b",
+    "url": "https://github.com/ceddy-cedd/k3s-resume-platform/actions/runs/24748039394",
+    "source_url": "https://github.com/ceddy-cedd/k3s-resume-platform/actions/runs/24748039394"
   },
   "dev_auto_update": {
     "label": "Dev Auto-Update",
     "status": "Active",
-    "summary": "Development environment updates are propagated through GitOps automation.",
+    "summary": "Flux bot updated the dev deployment manifest through GitOps image automation.",
     "value": "Flux-managed",
-    "url": "",
-    "source_url": "https://github.com/ceddy-cedd/k3s-resume-platform-gitops"
+    "url": "https://github.com/ceddy-cedd/k3s-resume-platform-gitops/commit/4047901ea59bccf02a77f3468d24677496b9a14f",
+    "source_url": "https://github.com/ceddy-cedd/k3s-resume-platform-gitops/commit/4047901ea59bccf02a77f3468d24677496b9a14f"
   },
   "policy_enforcement": {
     "label": "Policy Enforcement",
