@@ -1,58 +1,58 @@
 {
-    "live_demo": {
-        "label": "Live Demo",
-        "status": "Ready",
-        "summary": "Public-facing FastAPI application is available for demonstration.",
-        "value": "Demo Available",
-        "url": "https://cedricmiller.dev/",
-        "source_url": "https://github.com/ceddy-cedd/k3s-resume-platform"
-    },
-    "prod_promotion": {
-        "label": "Prod Promotion",
-        "status": "Digest-Pinned",
-        "summary": "Production deployment is promoted by immutable image digest.",
-        "value": "sha256:pending",
-        "url": "",
-        "source_url": "https://github.com/ceddy-cedd/k3s-resume-platform-gitops"
-    },
-    "sbom": {
-        "label": "SBOM",
-        "status": "Available",
-        "summary": "Software bill of materials is generated as part of the delivery workflow.",
-        "value": "Syft-generated",
-        "url": "",
-        "source_url": "https://github.com/ceddy-cedd/k3s-resume-platform"
-    },
-    "image_signing": {
-        "label": "Image Signing",
-        "status": "Verified",
-        "summary": "Container images are signed and verified in the secure delivery flow.",
-        "value": "Cosign verified",
-        "url": "",
-        "source_url": "https://github.com/ceddy-cedd/k3s-resume-platform"
-    },
-    "pipeline": {
-        "label": "CI/CD Pipeline",
-        "status": "Passing",
-        "summary": "Build, publish, scan, and signing workflow is active.",
-        "value": "Latest run: pending",
-        "url": "",
-        "source_url": "https://github.com/ceddy-cedd/k3s-resume-platform/actions"
-    },
-    "dev_auto_update": {
-        "label": "Dev Auto-Update",
-        "status": "Active",
-        "summary": "Development environment updates are propagated through GitOps automation.",
-        "value": "Flux-managed",
-        "url": "",
-        "source_url": "https://github.com/ceddy-cedd/k3s-resume-platform-gitops"
-    },
-    "policy_enforcement": {
-        "label": "Policy Enforcement",
-        "status": "Enforced",
-        "summary": "Deployment policy checks are part of the Kubernetes delivery and promotion flow to reinforce safer release behavior.",
-        "value": "Policy enforced",
-        "url": "",
-        "source_url": "https://github.com/ceddy-cedd/k3s-resume-platform-gitops"
-    }
+  "live_demo": {
+    "label": "Live Demo",
+    "status": "Ready",
+    "summary": "Public-facing FastAPI application is available for demonstration.",
+    "value": "Demo Available",
+    "url": "https://cedricmiller.dev/",
+    "source_url": "https://github.com/ceddy-cedd/k3s-resume-platform"
+  },
+  "prod_promotion": {
+    "label": "Prod Promotion",
+    "status": "Digest-Pinned",
+    "summary": "Production deployment is promoted by immutable image digest.",
+    "value": "sha256:1bf8a2839550...",
+    "url": "",
+    "source_url": "https://github.com/ceddy-cedd/k3s-resume-platform-gitops"
+  },
+  "sbom": {
+    "label": "SBOM",
+    "status": "Available",
+    "summary": "An SPDX SBOM is generated during the image build workflow.",
+    "value": "rss-api-sbom.spdx.json",
+    "url": "https://github.com/ceddy-cedd/k3s-resume-platform/actions/runs/24707310248",
+    "source_url": "https://github.com/ceddy-cedd/k3s-resume-platform/actions/runs/24707310248"
+  },
+  "image_signing": {
+    "label": "Image Signing",
+    "status": "Signed",
+    "summary": "The latest image was signed with Cosign in the delivery workflow.",
+    "value": "Cosign keyless signing",
+    "url": "https://github.com/ceddy-cedd/k3s-resume-platform/actions/runs/24707310248",
+    "source_url": "https://github.com/ceddy-cedd/k3s-resume-platform/actions/runs/24707310248"
+  },
+  "pipeline": {
+    "label": "CI/CD Pipeline",
+    "status": "Passing",
+    "summary": "Latest build, scan, publish, and signing workflow completed successfully.",
+    "value": "Run #17 \u00b7 0566c00",
+    "url": "https://github.com/ceddy-cedd/k3s-resume-platform/actions/runs/24707310248",
+    "source_url": "https://github.com/ceddy-cedd/k3s-resume-platform/actions/runs/24707310248"
+  },
+  "dev_auto_update": {
+    "label": "Dev Auto-Update",
+    "status": "Active",
+    "summary": "Development environment updates are propagated through GitOps automation.",
+    "value": "Flux-managed",
+    "url": "",
+    "source_url": "https://github.com/ceddy-cedd/k3s-resume-platform-gitops"
+  },
+  "policy_enforcement": {
+    "label": "Policy Enforcement",
+    "status": "Enforced",
+    "summary": "Deployment policy checks are part of the delivery and promotion flow.",
+    "value": "Policy enforced",
+    "url": "",
+    "source_url": "https://github.com/ceddy-cedd/k3s-resume-platform-gitops"
+  }
 }
