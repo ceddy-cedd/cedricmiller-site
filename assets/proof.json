@@ -20,31 +20,31 @@
     "status": "Available",
     "summary": "An SPDX SBOM is generated during the image build workflow.",
     "value": "rss-api-sbom.spdx.json",
-    "url": "https://github.com/ceddy-cedd/k3s-resume-platform/actions/runs/24754502750",
-    "source_url": "https://github.com/ceddy-cedd/k3s-resume-platform/actions/runs/24754502750"
+    "url": "https://github.com/ceddy-cedd/k3s-resume-platform/actions/runs/24759285016",
+    "source_url": "https://github.com/ceddy-cedd/k3s-resume-platform/actions/runs/24759285016"
   },
   "image_signing": {
     "label": "Image Signing",
     "status": "Signed",
     "summary": "The latest image was signed with Cosign in the delivery workflow.",
     "value": "Cosign keyless signing",
-    "url": "https://github.com/ceddy-cedd/k3s-resume-platform/actions/runs/24754502750",
-    "source_url": "https://github.com/ceddy-cedd/k3s-resume-platform/actions/runs/24754502750"
+    "url": "https://github.com/ceddy-cedd/k3s-resume-platform/actions/runs/24759285016",
+    "source_url": "https://github.com/ceddy-cedd/k3s-resume-platform/actions/runs/24759285016"
   },
   "pipeline": {
     "label": "CI/CD Pipeline",
     "status": "Passing",
     "summary": "Latest build, scan, publish, and signing workflow completed successfully.",
-    "value": "Run #20 \u00b7 ee07850",
-    "url": "https://github.com/ceddy-cedd/k3s-resume-platform/actions/runs/24754502750",
-    "source_url": "https://github.com/ceddy-cedd/k3s-resume-platform/actions/runs/24754502750"
+    "value": "Run #21 \u00b7 67221b4",
+    "url": "https://github.com/ceddy-cedd/k3s-resume-platform/actions/runs/24759285016",
+    "source_url": "https://github.com/ceddy-cedd/k3s-resume-platform/actions/runs/24759285016"
   },
   "dev_auto_update": {
     "label": "Dev Auto-Update",
     "status": "Active",
     "summary": "Flux bot updated the dev deployment manifest through GitOps image automation.",
     "value": "Flux-managed",
-    "url": "https://github.com/ceddy-cedd/k3s-resume-platform-gitops/commit/a59634c80f59a398989e41354a2707ea5a36d4b8",
-    "source_url": "https://github.com/ceddy-cedd/k3s-resume-platform-gitops/commit/a59634c80f59a398989e41354a2707ea5a36d4b8"
+    "url": "https://github.com/ceddy-cedd/k3s-resume-platform-gitops/commit/ad3807d0109fd58ba2f5c0669922be135782f2b0",
+    "source_url": "https://github.com/ceddy-cedd/k3s-resume-platform-gitops/commit/ad3807d0109fd58ba2f5c0669922be135782f2b0"
   }
 }
