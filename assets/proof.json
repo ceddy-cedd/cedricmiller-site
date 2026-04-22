@@ -20,24 +20,24 @@
     "status": "Available",
     "summary": "An SPDX SBOM is generated during the image build workflow.",
     "value": "rss-api-sbom.spdx.json",
-    "url": "https://github.com/ceddy-cedd/k3s-resume-platform/actions/runs/24750613978",
-    "source_url": "https://github.com/ceddy-cedd/k3s-resume-platform/actions/runs/24750613978"
+    "url": "https://github.com/ceddy-cedd/k3s-resume-platform/actions/runs/24754502750",
+    "source_url": "https://github.com/ceddy-cedd/k3s-resume-platform/actions/runs/24754502750"
   },
   "image_signing": {
     "label": "Image Signing",
     "status": "Signed",
     "summary": "The latest image was signed with Cosign in the delivery workflow.",
     "value": "Cosign keyless signing",
-    "url": "https://github.com/ceddy-cedd/k3s-resume-platform/actions/runs/24750613978",
-    "source_url": "https://github.com/ceddy-cedd/k3s-resume-platform/actions/runs/24750613978"
+    "url": "https://github.com/ceddy-cedd/k3s-resume-platform/actions/runs/24754502750",
+    "source_url": "https://github.com/ceddy-cedd/k3s-resume-platform/actions/runs/24754502750"
   },
   "pipeline": {
     "label": "CI/CD Pipeline",
     "status": "Passing",
     "summary": "Latest build, scan, publish, and signing workflow completed successfully.",
-    "value": "Run #19 \u00b7 b6d7d6e",
-    "url": "https://github.com/ceddy-cedd/k3s-resume-platform/actions/runs/24750613978",
-    "source_url": "https://github.com/ceddy-cedd/k3s-resume-platform/actions/runs/24750613978"
+    "value": "Run #20 \u00b7 ee07850",
+    "url": "https://github.com/ceddy-cedd/k3s-resume-platform/actions/runs/24754502750",
+    "source_url": "https://github.com/ceddy-cedd/k3s-resume-platform/actions/runs/24754502750"
   },
   "dev_auto_update": {
     "label": "Dev Auto-Update",
@@ -46,13 +46,5 @@
     "value": "Flux-managed",
     "url": "https://github.com/ceddy-cedd/k3s-resume-platform-gitops/commit/a59634c80f59a398989e41354a2707ea5a36d4b8",
     "source_url": "https://github.com/ceddy-cedd/k3s-resume-platform-gitops/commit/a59634c80f59a398989e41354a2707ea5a36d4b8"
-  },
-  "policy_enforcement": {
-    "label": "Policy Enforcement",
-    "status": "Enforced",
-    "summary": "Deployment policy checks are part of the delivery and promotion flow.",
-    "value": "Policy enforced",
-    "url": "",
-    "source_url": "https://github.com/ceddy-cedd/k3s-resume-platform-gitops"
   }
 }
