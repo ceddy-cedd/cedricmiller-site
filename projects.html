@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects | Cedric Miller</title>
-  <meta
-    name="description"
-    content="Projects by Cedric Miller focused on DevSecOps, Kubernetes, GitOps, CI/CD, and security engineering."
-  />
+  <meta name="description"
+    content="Projects by Cedric Miller focused on DevSecOps, Kubernetes, GitOps, CI/CD, and security engineering." />
   <link rel="canonical" href="https://cedricmiller.dev/projects.html" />
   <link rel="stylesheet" href="/styles.css" />
 </head>
+
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
@@ -32,48 +32,56 @@
 
       <article class="card">
         <h2>K3s Resume Platform</h2>
-            <p class="meta">Inspectable DevSecOps / GitOps Delivery Project</p>
-      <p>
-        K3s Resume Platform is a public-facing FastAPI application delivered through a K3s-based GitOps workflow.
-        The project demonstrates container build and publish automation, SBOM generation, image signing, automated
-        dev environment updates through Flux image automation, and controlled production promotion by immutable digest.
-      </p>
+        <p class="meta">Inspectable DevSecOps / GitOps Delivery Project</p>
+        <p>
+          K3s Resume Platform is a public-facing FastAPI application delivered through a K3s-based GitOps workflow.
+          The project demonstrates container build and publish automation, SBOM generation, image signing, automated
+          dev environment updates through Flux image automation, and controlled production promotion by immutable
+          digest.
+        </p>
 
-      <h3>What This Project Proves</h3>
-      <ul class="clean-list">
-        <li>Public FastAPI application serving resume and RSS aggregation pages</li>
-        <li>Dockerized runtime with health endpoints</li>
-        <li>GitHub Actions workflow for build, publish, SBOM generation, and image signing</li>
-        <li>GHCR image distribution for deployment artifacts</li>
-        <li>Flux-based GitOps automation for dev image updates</li>
-        <li>Production deployment pinned to immutable image digests</li>
-        <li>Evidence-backed operational proof links for each implemented control</li>
-      </ul>
+        <figure class="project-diagram">
+          <img src="/assets/k3s-delivery-flow.svg"
+            alt="Architecture diagram showing the K3s Resume Platform delivery flow from app repository to GitHub Actions, GHCR, GitOps manifests, Flux CD, the K3s cluster, and cedricmiller.dev." />
+          <figcaption>Delivery and promotion flow for the K3s Resume Platform.</figcaption>
+        </figure>
 
-      <h3>Delivery Flow</h3>
-      <ul class="clean-list">
-        <li>1. Application code is committed to the app repository.</li>
-        <li>2. GitHub Actions builds the container image and publishes it to GHCR.</li>
-        <li>3. The workflow generates an SPDX SBOM for the image.</li>
-        <li>4. The image is signed with Cosign using keyless signing.</li>
-        <li>5. Flux image automation updates the dev GitOps manifest to the new image.</li>
-        <li>6. Production is promoted separately through a digest-pinned GitOps manifest update.</li>
-      </ul>
 
-      <h3>Implemented Controls &amp; Evidence</h3>
-      <p>
-        Implemented controls include SBOM generation, image signing, immutable production promotion by digest,
-        and GitOps-based separation between delivery and deployment state. The Operational Proof panel links each
-        implemented claim to concrete evidence such as workflow runs, SBOM artifacts, GitOps commit history for
-        dev updates, and the exact production promotion commit.
-      </p>
+        <h3>What This Project Proves</h3>
+        <ul class="clean-list">
+          <li>Public FastAPI application serving resume and RSS aggregation pages</li>
+          <li>Dockerized runtime with health endpoints</li>
+          <li>GitHub Actions workflow for build, publish, SBOM generation, and image signing</li>
+          <li>GHCR image distribution for deployment artifacts</li>
+          <li>Flux-based GitOps automation for dev image updates</li>
+          <li>Production deployment pinned to immutable image digests</li>
+          <li>Evidence-backed operational proof links for each implemented control</li>
+        </ul>
 
-      <h3>What Is Not Claimed</h3>
-      <p>
-        This project does not currently claim verified Kubernetes admission policy enforcement because that evidence
-        is not implemented in the repository. Unsupported claims were removed from the public proof panel to keep
-        the project accurate and defensible.
-      </p>
+        <h3>Delivery Flow</h3>
+        <ul class="clean-list">
+          <li>1. Application code is committed to the app repository.</li>
+          <li>2. GitHub Actions builds the container image and publishes it to GHCR.</li>
+          <li>3. The workflow generates an SPDX SBOM for the image.</li>
+          <li>4. The image is signed with Cosign using keyless signing.</li>
+          <li>5. Flux image automation updates the dev GitOps manifest to the new image.</li>
+          <li>6. Production is promoted separately through a digest-pinned GitOps manifest update.</li>
+        </ul>
+
+        <h3>Implemented Controls &amp; Evidence</h3>
+        <p>
+          Implemented controls include SBOM generation, image signing, immutable production promotion by digest,
+          and GitOps-based separation between delivery and deployment state. The Operational Proof panel links each
+          implemented claim to concrete evidence such as workflow runs, SBOM artifacts, GitOps commit history for
+          dev updates, and the exact production promotion commit.
+        </p>
+
+        <h3>What Is Not Claimed</h3>
+        <p>
+          This project does not currently claim verified Kubernetes admission policy enforcement because that evidence
+          is not implemented in the repository. Unsupported claims were removed from the public proof panel to keep
+          the project accurate and defensible.
+        </p>
       </article>
     </div>
   </main>
@@ -85,4 +93,5 @@
     </div>
   </footer>
 </body>
+
 </html>

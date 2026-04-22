@@ -721,3 +721,22 @@ h3 {
     line-height: 1.12;
   }
 }
+
+.project-diagram {
+  margin: 24px 0 32px;
+}
+
+.project-diagram img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  border-radius: 18px;
+  border: 1px solid rgba(101, 200, 255, 0.14);
+  background: rgba(10, 18, 36, 0.9);
+}
+
+.project-diagram figcaption {
+  margin-top: 10px;
+  color: #9bb3d1;
+  font-size: 0.95rem;
+}
